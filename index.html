@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="style.css"/>
+
+  <title>Board Game Try-Out</title>
+</head>
+<body>
+
+
+
+  <!-- Header -->
+
+  <header>
+    <div class="wrapper">
+        <h1>Board Game Try-Out!</h1>
+    </div>
+  </header>
+
+  <!-- Header -->
+  <main>
+    <div class="wrapper">
+  <!-- Form section -->
+    <section>
+      <div class="rules">
+        <h2>Find your game</h2>
+        <p>Get ready to have some fun!! This is your opportunity to roll the dice and take a chance on a new game.</p>
+        <p>Fill out the criteria below and discover your next game!</p>
+        <p>Like a 9 sided die, you are given up to 9 options</p>
+        <p>Pick wisely and good luck!</p>
+      </div>
+      <form class="criteria-container">
+        <div class="search-criteria">
+          <label for="criteria">How many players want to play?:</label>
+          <select name="num-of-players" id="player-num">
+            <option value="">--Random--</option>
+            <option value="1">1 Player</option>
+            <option value="2">2 Players</option>
+            <option value="3">3 Players</option>
+            <option value="4">4 Players</option>
+            <option value="5">5 Players</option>
+            <option value="6">6 Players</option>
+            <option value="7">7 Players</option>
+            <option value="8">8 Players</option>
+          </select>
+        </div>
+
+        <div class="search-criteria">
+          <label for="criteria">How long are you willing to play 1 game?:</label>
+          <select name="time" id="player-time">
+            <option value="">--Random--</option>
+            <option value="10">10 minutes</option>
+            <option value="20">20 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="40">40 minutes</option>
+            <option value="50">50 minutes</option>
+            <option value="60">1 hour</option>
+            <option value="120">2 hours</option>
+            <option value="180">3 hours</option>
+          </select>
+        </div>
+
+        <div class="search-criteria">
+          <label for="criteria">What is the minimum age?:</label>
+          <select name="age" id="age">
+            <option value="">--Random--</option>
+            <option value="1">1 year old</option>
+            <option value="5">5 year old</option>
+            <option value="10">10 year old</option>
+            <option value="15">15 year old</option>
+          </select>
+        </div>
+        <div class="search-setting">
+          <input type="submit" class="button" id="button-submit" value="Submit">
+          <input type="reset" class="button" id="button-reset" value="Reset">
+        </div>
+      </form>
+    </section>
+
+    <!-- Gallery Section-->
+    <section>
+      <ul class="flex-container">
+      </ul>
+    </section>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrapper">
+    <div class="footnote">
+      <p>
+        Data courtesy of the
+        <a href="https://www.boardgameatlas.com/api/docs/apps">https://www.boardgameatlas.com/api/docs/apps</a>
+      </p>
+      <p>Created at Juno College of Technology</p>
+    </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Add the jQuery CDN for jQuery methdods access -->
+  <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
